@@ -16,5 +16,22 @@ namespace CardFlip
         {
             InitializeComponent();
         }
+
+        private void cardBackPictureBox_Click(object sender, EventArgs e)
+        {
+            cardFacePictureBox.Visible = true;
+            cardBackPictureBox.Visible = false;
+        }
+
+        private void cardFacePictureBox_Click(object sender, EventArgs e)
+        {
+            cardBackPictureBox.Visible = true;
+            cardFacePictureBox.Visible = false;
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+
+        }
     }
 }
